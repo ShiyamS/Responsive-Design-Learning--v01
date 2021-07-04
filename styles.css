@@ -120,3 +120,40 @@ img {
 .description-2 .items {
   margin-left: 3.5rem;
 }
+
+@media (max-width: 900px) {
+  .details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .row p + p {
+    margin-top: 2em;
+    margin-left: 0;
+  }
+
+  .description-2 .row {
+    flex-direction: column-reverse;
+  }
+
+  .items {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .description-1 .items,
+  .description-2 .items {
+    margin-bottom: 2.5em;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
